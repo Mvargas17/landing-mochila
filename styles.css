@@ -1,0 +1,17 @@
+:root{ --gold:#D4AF37; --black:#0B0B0B; --soft:#f7f7f8; }
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:14px;padding:.9rem 1.25rem;font-weight:700}
+.btn-primary{background:var(--gold);color:var(--black)}
+.btn-primary:hover{filter:brightness(1.05)}
+.btn-ghost{border:1px solid var(--gold);color:var(--black);background:white}
+.gold-glow{box-shadow:0 0 0 2px rgba(212,175,55,.16),0 10px 34px rgba(212,175,55,.18)}
+.stockbar{height:10px;border-radius:999px;overflow:hidden;background:#e8e8ea}
+.stockbar>span{display:block;height:100%;background:linear-gradient(90deg,var(--gold),#f6e27a)}
+.soft-card{background:white;border:1px solid #ececf1;border-radius:22px;transition:transform .2s ease, box-shadow .2s ease}
+.soft-card.hover\:lift:hover{transform:translateY(-3px); box-shadow:0 10px 30px rgba(0,0,0,.06)}
+.carousel-track{display:flex;gap:1rem;transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+.carousel-item{min-width:85%}
+@media(min-width:1024px){.carousel-item{min-width:32%}}
+.table th,.table td{border-top:1px solid #e6e6e9}
+.badge{display:inline-flex;align-items:center;gap:.4rem;border:1px solid #e6e6e9;border-radius:999px;padding:.4rem .7rem;font-size:.8rem}
+.shine{position:relative;overflow:hidden}
+.shine::after{content:"";position:absolute;inset:-120% -120% auto auto;width:240%;height:240%;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.55) 52%,transparent 64%);transform:rotate(12deg);animation:shine 7s infinite}
